@@ -1,0 +1,97 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+}
+
+.controls {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top, .footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #222;
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background-color: #262626;
+}
+
+#editor {
+    background-color: white;
+    color: black;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+iframe {
+    width: 1px;
+    height: 1px;
+    opacity: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#console {
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-family: monospace;
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    #editor {
+        width: 100vw;
+    }
+
+    #console {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="jsbox.png" type="image/png">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="db6ed5f5-7240-4e91-b066-2937e951d20d"></script>
+</head>
+<body class="colors">
+    <div class="top">
+        <h1>JSBox</h1>
+    </div>
+
+    <div class="controls">
+        <h1>Run & Test JavaScript</h1>
+        <div id="editor"></div>
+        <div class="buttons">
+            <button class="btn" id="run">Run Code</button>
+            <button class="btn" id="clear">Clear Console</button>
+        </div>
+
+        <div id="console"></div>
+    </div>
+
+    <div class="footer">
+        <p>made by dumo. <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+
+    <iframe id="iframe"></iframe>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
